@@ -41,7 +41,7 @@ describe("/me", function() {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Fuck me, yes Donald Trump is still the US President',
+        'Fuck yeah, Donald Trump is NOT the US President',
         '- TESTFROM'
       );
     });

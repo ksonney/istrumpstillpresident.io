@@ -29,10 +29,10 @@ describe("/eo13769", function() {
       operation.register(app, output);
 
       const req = {
-         params: {
-           from: "TESTFROM"
-         }
-       };
+        params: {
+          from: "TESTFROM"
+        }
+      };
 
       func(req,'RES');
       return expect(output).toHaveBeenCalledWith(

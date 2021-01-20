@@ -42,7 +42,7 @@ describe("/gibbon", function() {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Yes, TESTNAME, the fascist, loofa-faced shit-gibbon Donald Trump is still the US President.',
+        'Yes, TESTNAME, the fascist, loofa-faced shit-gibbon Donald Trump is no longer the US President.',
         '- TESTFROM'
       );
     });

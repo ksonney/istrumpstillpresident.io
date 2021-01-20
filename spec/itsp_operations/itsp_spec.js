@@ -8,7 +8,7 @@
 const operation = require('../../lib/itsp_operations/itsp');
 
 describe("/itsp", function() {
-  it("should have the correct name", () => expect(operation.name).toEqual('Yes He Is'));
+  it("should have the correct name", () => expect(operation.name).toEqual('No He Is Not'));
 
   it("should have the correct url", () => expect(operation.url).toEqual('/itsp/:name/:from'));
 
@@ -39,12 +39,11 @@ describe("/itsp", function() {
       };
       var nowish = new Date();
       var innaug = new Date("01/20/2021");
-      var daysLeft = Math.floor((Date.UTC(innaug.getFullYear(), innaug.getMonth(), innaug.getDate()) - Date.UTC(nowish.getFullYear(), nowish.getMonth(), nowish.getDate()) ) /(1000 * 60 * 60 * 24));
       func(req,'RES');
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        `Sadly Yes, TESTNAME, Donald Trump is still the US President for ${daysLeft} days.`,
+        `No, TESTNAME, Donald Trump is no longer the US President.`,
         '- TESTFROM'
       );
     });
