@@ -1,3 +1,11 @@
 node_modules
+newrelic_agent.log
+newrelic.js
+public/googlead*
+npm-debug.log
+.idea
+.DS_Store
+decaffeinate*
+**/*.original.*
 coverage
 .idea

@@ -1,12 +1,15 @@
-# FOAAS
+# Is Trump Still President?
 
-2.0.0
+1.1.2
 
-[![Build Status](https://travis-ci.org/tomdionysus/foaas.svg?branch=master)](https://travis-ci.org/tomdionysus/foaas)
+[![Build Status](https://travis-ci.org/ksonney/istrumpstillpresident.io.svg?branch=istrumpstillpresident)](https://travis-ci.org/ksonney/istrumpstillpresident.io)
 
-FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.
 
-Please see https://foaas.com for API documentation and examples.
+IsTrumpStillPresident.io provides a modern, RESTful, scalable solution to the common problem of checking to see if Donald Trump is still the US President.
+
+This is a fork of the FOAAS project at https://foass.com
+
+Please see http://istrumpstillpresident.io for API documentation and examples.
 
 # Installation
 
@@ -19,6 +22,10 @@ Please see https://foaas.com for API documentation and examples.
 # Test
 
 	npm test
+
+# Clients and Integrations
+
+Any one of the following FOAAS Clients or integrations can be adapted for istrumstillpresident.io However, we have not done so. 
 
 # Docker
 
@@ -51,7 +58,6 @@ API clients are available in a number of languages:
 | [Polymer](https://www.polymer-project.org/) | https://github.com/benfonty/fooas-element                                    |
 | [React](https://reactjs.org/) | https://github.com/circa10a/react-foaas-card                                   	     |
 
-# Integrate FOAAS
 
 | Platform/Software     | Name                                                                         |
 |:--------------------------------------------|:-----------------------------------------------------------------------------|
@@ -65,11 +71,11 @@ API clients are available in a number of languages:
 
 ## Adding new operations
 
-To add a new FOAAS operation:
+To add a new istrumpstillpresident operation:
 
 1. Fork into your account
 2. Branch into a feature branch `feature/your_operation`
-3. See the operation files in `/lib/operations`.
+3. See the operation files in `/lib/itsp_operations`.
 4. Add specs, using `/spec/operations` as examples. We won't be merging operations without working specs.
 5. Push to your fork and submit a PR.
 
