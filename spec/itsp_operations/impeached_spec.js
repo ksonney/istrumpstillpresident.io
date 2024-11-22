@@ -42,7 +42,7 @@ describe("/impeached", function() {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Yes, TESTNAME, Donald Trump has been impeached TWICE, but was not convicted the first time.',
+        'Yes, TESTNAME, Donald Trump has been impeached TWICE, but was not convicted either time.',
         '- TESTFROM'
       );
     });
