@@ -42,7 +42,7 @@ describe("/putin", function() {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'No, TESTNAME, Donald Trump will be the US President, but we all know Putin is really in charge.',
+        'Yes, TESTNAME, Donald Trump is the US President, but we all know Putin is really in charge.',
         '- TESTFROM'
       );
     });

@@ -38,12 +38,12 @@ describe("/itsp", function() {
         }
       };
       var nowish = new Date();
-      var innaug = new Date("01/20/2021");
+      var innaug = new Date("01/20/2029");
       func(req,'RES');
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        `No, TESTNAME, Donald Trump is no longer the US President.`,
+        `Yes, TESTNAME, Donald Trump is the US President. AGAIN.`,
         '- TESTFROM'
       );
     });

@@ -41,7 +41,7 @@ describe("/me", function() {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Fuck me, Donald Trump was elected US President',
+        'Fuck me, Donald Trump is US President',
         '- TESTFROM'
       );
     });
