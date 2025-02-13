@@ -1,9 +1,9 @@
-const operation = require('../../lib/itsp_operations/putin');
+const operation = require('../../lib/itsp_operations/musk');
 
-describe("/putin", function() {
-  it("should have the correct name", () => expect(operation.name).toEqual('Putin really is'));
+describe("/musk", function() {
+  it("should have the correct name", () => expect(operation.name).toEqual('Musk really is'));
 
-  it("should have the correct url", () => expect(operation.url).toEqual('/putin/:name/:from'));
+  it("should have the correct url", () => expect(operation.url).toEqual('/musk/:name/:from'));
 
   it("should have the correct fields", () => expect(operation.fields).toEqual([ { name : 'Name', field : 'name' }, { name : 'From', field : 'from' }]));
 
@@ -14,7 +14,7 @@ describe("/putin", function() {
 
       operation.register(app,null);
 
-      expect(app.get).toHaveBeenCalledWith('/putin/:name/:from', jasmine.any(Function));
+      expect(app.get).toHaveBeenCalledWith('/musk/:name/:from', jasmine.any(Function));
     });
 
     return it('should call output with correct params', function() {
@@ -35,7 +35,7 @@ describe("/putin", function() {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Yes, TESTNAME, Donald Trump is the US President, but we all know he\'s a wannabe Putin.',
+        'Yes, TESTNAME, Elon Musk is the US President and Donald Trump is his puppet.',
         '- TESTFROM'
       );
     });

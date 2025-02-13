@@ -1,10 +1,3 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-/*
- * decaffeinate suggestions:
- * DS102: Remove unnecessary code created because of implicit returns
- * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
- */
 const operation = require('../../lib/itsp_operations/me');
 
 describe("/me", function() {
@@ -41,7 +34,7 @@ describe("/me", function() {
       return expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Fuck me, Donald Trump is US President',
+        'Fuck me, Donald Trump is the US President',
         '- TESTFROM'
       );
     });
